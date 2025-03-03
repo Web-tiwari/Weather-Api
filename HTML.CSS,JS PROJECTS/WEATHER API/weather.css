@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding:0;
+box-sizing: border-box;
+font-family: 'popins',sans-serif;
+}
+body{
+  text-align: center;
+  
+background-image: url("images/background.jpg"); 
+
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+ /* API box   */
+.box{
+ height: 640px;
+ width: 500px;
+ margin:70px 500px;
+border-radius: 16px;
+/* to make transparent background */
+background-color:rgba(255,255,255,.1);
+backdrop-filter: blur(30px);
+border: 2px solid rgba(255,255,255,.2);
+ text-align: center;
+ padding: 20px;
+  /* to make every text white inside weather api box  */
+  color: #fff;    
+}
+/* weather related css */
+.weather{
+  margin-top: 50px;
+  display: none;
+}
+.weather-icon{
+  height: 140px;
+  width: 140px;
+  
+}
+.temp{
+font-size:60px;
+padding-top: 50px;
+font-weight: 500;
+}
+.city{
+/* padding-top: 10px; */
+font-size: 31px;
+font-weight: 400;
+word-spacing: 7px;
+/* margin-top: -5px; */
+}
+.details{
+  text-align: center;
+  display: flex;
+  justify-content:space-between;
+  padding:0 40px;
+  margin-top: 100px;
+  gap: 70px;
+}
+.col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap:5px;
+}
+.error{
+  
+  margin-top:20px;
+  font-size: 20px;
+  display: none;
+}
+.error-img{
+  height:330px;
+  width:330px;
+  margin-top:20px;
+}
+.searchBtn{
+  cursor: pointer;
+}

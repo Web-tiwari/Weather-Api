@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEATHER API</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+<!-- container -->
+<div class="box">
+  <!-- form area -->
+   <div>
+  <input type="text" placeholder="Enter City Name" style="border-radius: 20px; border:transparent ; padding: 10px; margin-top:20px; width: 80%; height: 50px; font-size:18px;"     class="searchBox">
+  <span style="border-radius: 50%;border: transparent; padding:15px; height: 50px; width:50px;background-color: white;margin-left: 10px"
+   class="searchBtn"
+  ><button style="border: transparent; background-color: white"><i class="fa-solid fa-magnifying-glass" style="font-size: 20px;"></i></button></span>
+</div>
+<!-- Error Message display -->
+<div class="error">
+<p>Invalid City Name</p>
+<img src="https://cdn4.iconfinder.com/data/icons/navigation-set/128/Notok-512.png" class="error-img">
+</div>
+
+<!--weather  image section -->
+ <div class="weather">
+  <img src="images/sun.png"alt="sun image" class="weather-icon">            
+  <h1 class="temp">22°c </h1>
+  <h2 class="city">New York</h2>
+  <div class="details">     
+    <div class="col">
+       <i class="fa-solid fa-water" style="font-size:60px;"></i>
+        <div> 
+        <p class="humidity" style="font-size: 28px; margin-top:-20px;">50%</p>
+        <p style="padding-top:5px;">Humidity</p>
+        </div>
+     </div>
+
+    <div class="col">
+      
+        <i class="fa-solid fa-wind" style="font-size:52px;"></i> 
+       <div>
+        <p class="wind" style="font-size: 28px;  margin-top:-20px;">15km/h</p>
+        <p style="padding-top:5px;">wind speed</p>
+       </div>
+    </div>
+  </div>
+ </div>
+ 
+ 
+</div>
+<!-- press alt + 0176 for  celsius-->
+  <script src="weather.js"></script>
+</body>
+</html>
